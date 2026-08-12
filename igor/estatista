@@ -1,0 +1,25 @@
+# Carregando base de dados
+dados <- mtcars
+
+srt (dados)
+View(dados)
+dim(dados)
+names(dados)
+
+summary(dados)
+
+
+# Variaveis quantitativas continuas que serao analisadas
+variaveis_quantitativa <- c(
+  "mpg" , # milhas por galao (consumo de combustivel)
+  "disp" , # cilindrada em polegadas cubicas
+  "hp" , # pontecia em cavalos - vapor (horsepower)
+  "drat" , # relacao do diferencial traseiro
+  "wt" , # peso em mil libras (ex:2.62 = 2620 libras)
+  "qsec" , # tempo para percorrer 1/4 de milha em segundos
+  
+)
+# Variaveis categoricas/discretas (serao usadas para agrupamento)
+# cyl = nnumeros de cilindros (4, 6 ou 8) -> discreta/ordinal
+# gear = numero de marchas (3, 4 ou 5) -> discreta/ordinal
+# am = tipo de trasmissao (0=automatico, 1=manual) -> nominal
